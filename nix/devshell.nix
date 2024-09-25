@@ -1,8 +1,5 @@
-{ pkgs, scriptDir }:
+{ pkgs, scriptDir, go }:
 with pkgs;
-let
-  go = pkgs.go_1_23;
-in
 mkShell {
   nativeBuildInputs = [
     # basics
